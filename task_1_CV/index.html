@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script>
+  
+    function changeColor() {
+      var mycolors = ["red","green","blue","yellow","black","grey","orange"];
+      document.getElementById("myname").style.color = mycolors[Math.floor((Math.random() *7))];
+      console.log(name.style.color);
+  }
+  
+  </script>
 <style>
+  
 table {
   border-collapse: collapse;
   font-family: arial, sans-serif;
-  width: 100%;
+  width: 80%;
 }
 p{
-  padding-right:  30%;
+  /* padding-right:  30%;  */
 }
 td, th {
   padding: 0px 2px 0px 20px;
@@ -17,7 +27,7 @@ td, th {
   
 }
 
-h1,h2,h3 {
+h2,h3 {
   color: rgb(15,45,85);
 }
 
@@ -40,12 +50,15 @@ li {
 .llist::before {
     position: absolute;
     top: 0;
-    left: -11pt;
-    width: 1px;
+    left: -11.5pt;
+    width: 3px;
     height: 10000%;
     background: grey;
     content: "";
     z-index: -1;   
+}
+.bluelist{
+  list-style-image: url('images/bluebullet.png');
 }
 img {
   border-radius: 100%;
@@ -53,7 +66,9 @@ img {
   width: 0.8em;
   height: 0.8em;
 }
-
+a{
+  color: rgb(15,45,85);
+}
 </style>
 </head>
 <body>
@@ -61,14 +76,14 @@ img {
 <h3>The CV</h3>
 
 <table>
-  <tr>  <th class="lside"></th>    <th><h1>Pacome Simon Mbonimpa</h1></th>    </tr>
+  <tr>  <th class="lside"></th>    <th><a id="myname" onclick="changeColor()" ><h1>Pacome Simon Mbonimpa</h1></a></th>    </tr>
   
   <tr>  <td class="lside"></td>    <td><h3>IT Project Manager</h3></td>    
   
   </tr>
   <tr>  <td class="lside"></td>   
           <td style="padding-right:  30%;">
-              <table style="color:rgb(15,45,85);">
+              <table style="color:rgb(15,45,85); width:100%;">
                   <tr><td style="padding: 0px;"><img src="images/phone.png"/> 774-987-4009</td><td style="padding: 0px;"><img src="images/linkedin.png"/> linkedin.com/johnutw</td></tr>
                   <tr><td style="padding: 0px;"><img src="images/mail.png"/> j.smith@uptowork.com</td><td style="padding: 0px;"><img src="images/twitter.png"/> johnsmithutw</td></tr>
               </table>
@@ -91,7 +106,7 @@ img {
   
   <tr>
     <td class="lside">2006-12 - present</td>
-    <td class="lhead"><h4><ul><li class="llist">Senior Project Manager</li>
+    <td class="lhead"><h4><ul><li class="llist bluelist">Senior Project Manager</li>
         </ul></h4>
       </td>
   </tr>
@@ -111,7 +126,7 @@ img {
 
   <tr>
     <td class="lside">2004-09 - 2006-11</td>
-    <td class="lhead"><h4><ul><li class="llist">Junior Project Manager</li></ul></h4></li></td>
+    <td class="lhead"><h4><ul><li class="llist bluelist">Junior Project Manager</li></ul></h4></li></td>
   </tr>
 
   <tr>
@@ -134,7 +149,7 @@ img {
   
   <tr>
     <td class="lside">1996-09 - 2001-05</td>
-    <td class="lhead"><h4><ul><li class="llist">BS/MS in Computer Science, University of Maryland</li></ul></h4></td>
+    <td class="lhead"><h4><ul><li class="llist bluelist">BS/MS in Computer Science, University of Maryland</li></ul></h4></td>
   </tr>
 
   <tr>
@@ -157,10 +172,10 @@ img {
     <td class="lside"></td>
     <td class="lhead">
         <ul>
-            <li class="llist"><span style="font-weight: bold;">Business Process Improvement</span> - history of successful inovations.</li>
-            <li class="llist"><span style="font-weight: bold;">Vendor Management</span> - Member of Student Association of Computer Science.</li>
-            <li class="llist"><span style="font-weight: bold;">Project Scheduling</span> - Managed a student project to organize a conference for 50+ professionals.</li>
-            <li class="llist"><span style="font-weight: bold;">Sales Analysis</span> - Member of Student Association of Computer Science.</li>            
+            <li class="llist bluelist"><span style="font-weight: bold;">Business Process Improvement</span> - history of successful inovations.</li>
+            <li class="llist bluelist"><span style="font-weight: bold;">Vendor Management</span> - Member of Student Association of Computer Science.</li>
+            <li class="llist bluelist"><span style="font-weight: bold;">Project Scheduling</span> - Managed a student project to organize a conference for 50+ professionals.</li>
+            <li class="llist bluelist"><span style="font-weight: bold;">Sales Analysis</span> - Member of Student Association of Computer Science.</li>            
         </ul>
     </td>
   </tr>
@@ -174,14 +189,14 @@ img {
     <td class="lside"></td>
     <td>
 
-        <table>
+        <table style="width:100%;">
             <tr><td>
                     <ul>
                         <li>Microsoft Project, MS Windows Server, Linux/Unix</li>
                     </ul>
                 </td>
                 <td>
-                    *****<br>
+                    <img/><img/><img/><img/><img/><br>
                     Excellent
                 </td>
             </tr>
@@ -192,7 +207,7 @@ img {
                     </ul>
                 </td>
                 <td>
-                    ****-<br>
+                  <img/><img/><img/><img/><img style="background-color: grey;"/><br>
                     Very Good
                 </td>
             </tr> 
@@ -209,11 +224,11 @@ img {
   
   <tr>
     <td class="lside">2015-05</td>
-    <td class="lhead"><ul><li class="llist">PMP - Project Management Institute</li></ul></td>
+    <td class="lhead"><ul><li class="llist bluelist">PMP - Project Management Institute</li></ul></td>
   </tr>
   <tr>
     <td class="lside">2014-04</td>
-    <td class="lhead"><ul><li class="llist">PRINCE2® Foundation</li></ul></td>
+    <td class="lhead"><ul><li class="llist bluelist">PRINCE2® Foundation</li></ul></td>
   </tr>
 
 </table>
